@@ -1,0 +1,56 @@
+header {
+  margin-bottom: 0;
+  overflow: hidden;
+  padding: 0 50px;
+
+  div {
+    padding-top: 5px;
+    span {
+      display: block;
+      font-size: 16px;
+      text-align: right;
+      &:nth-child(2) { margin-bottom: 5px; }
+    }
+  }
+  nav {
+    float: right;
+    li {
+      background-color: $light-yellow;
+      border-radius: 5px 5px 0 0;
+      display: inline-block;
+      list-style-type: none;
+      margin: .5em .5em 0;
+      &:last-child { margin-right: 0; }
+      &.active, &.active:hover {
+        background-image: url('background.png');
+        color: $orange;
+        margin: 0 1em;
+        transform: scale(1.17);
+      }
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+    a {
+      color: $orange;
+      display: block;
+      font-weight: bolder;
+      padding: .25em 1.25em;
+      text-decoration: none;
+    }
+    ul {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  .logo {
+    float: left;
+    width: 200px;
+  }
+
+  .navigation-menu-button {
+    cursor: pointer;
+    display: none;
+  }
+}
